@@ -43,6 +43,8 @@ nav {
 main {
   margin-top: 10vh;
   height: 100%;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
 }
 
 .text {
@@ -53,7 +55,11 @@ main {
   background: rgb(0, 0, 0, 0.7);
 }
 
-.hero {
+#hero {
+  scroll-snap-align: start;
+
+  position: relative;
+
   background-image: url('./src/assets/hero.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -78,6 +84,8 @@ main {
 }
 
 #about-section {
+  scroll-snap-align: start;
+  
   height: 100%;
   width: 100%;
 
@@ -107,6 +115,8 @@ main {
 }
 
 #projects-section {
+  scroll-snap-align: start;
+
   height: 100%;
   width: 100%;
 
@@ -132,10 +142,6 @@ main {
 @media only screen and (orientation: landscape) {
   section {
     grid-template-rows: minmax(20%, auto) minmax(70%, auto);
-  }
-
-  .section-header {
-    background: none;
   }
 }
 
