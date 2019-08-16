@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: Hack, monospace;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
+
+  font-size: calc(14px + (21 - 14) * (100vw - 480px) / (1300 - 480));
+}
+
+body {
+  position: relative;
+  color: white;
+  background: black;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+main {
+  margin-top: 10vh;
+  height: 100%;
+}
+
+.text {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.7);
+}
+
+section {
+  height: 100%;
+  width: 100%;
+
+  /* background-image: url('./src/assets/about.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+
+  position: relative;
+
+  display: grid;
+  grid-template-rows: minmax(min-content, 15%) minmax(80%, auto);
+}
+
+.section-header {
+  grid-row-start: 1;
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+}
+
+@media only screen and (orientation: landscape) {
+  section {
+    grid-template-rows: minmax(20%, auto) minmax(70%, auto);
+  }
+
+  .section-header {
+    background: none;
+  }
+}
+
+#project-list {
+  grid-row-start: 2;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.project-card {
+  height: 45%;
+  width: 30%;
+  background-color: blue;
+  border: 1px solid red;
+}
