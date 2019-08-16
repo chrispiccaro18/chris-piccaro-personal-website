@@ -1,5 +1,6 @@
 * {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  box-sizing: border-box;
+  font-family: Hack, monospace;
 }
 
 html {
@@ -14,12 +15,12 @@ body {
   color: white;
   background: black;
   background-size: cover;
-  min-height: 90vh;
+  height: 90vh;
   width: 100%;
 }
 
 header {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-family: Hack, monospace;
   height: 10vh;
   width: 100%;
 
@@ -40,6 +41,15 @@ nav {
 
 main {
   margin-top: 10vh;
+  height: 100%;
+}
+
+.text {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.7);
 }
 
 .hero {
@@ -55,16 +65,42 @@ main {
 .hero-text {
   display: flex;
   flex-direction: column;
-
-
-  background: rgb(0, 0, 0);
-  background: rgb(0, 0, 0, 0.7);
+  align-items: flex-start;
 }
 
 .hero-text h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .hero-text h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+
+  background-image: url('./src/assets/about.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header {
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  align-self: flex-start;
+}
+
+.section-text {
+  width: 70%;
 }
