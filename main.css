@@ -184,8 +184,8 @@ main {
 .project-card {
   height: 45%;
   width: 30%;
-  background-color: blue;
-  border: 1px solid red;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 15px;
 }
 
 #resume-section {
