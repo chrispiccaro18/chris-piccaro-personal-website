@@ -7,8 +7,6 @@ html {
   visibility: visible;
   opacity: 1;
 
-  /* scroll-behavior: smooth; */
-
   font-size: calc(14px + (21 - 14) * (100vw - 480px) / (1300 - 480));
 }
 
@@ -43,7 +41,6 @@ header {
 }
 
 nav {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -51,9 +48,11 @@ nav {
 }
 
 nav div {
-  border: 2px solid white;
   height: 6vh;
   width: 6rem;
+  
+  border: 2px solid white;
+  border-radius: 10px;
 
   color: white;
 
@@ -61,19 +60,15 @@ nav div {
   justify-content: center;
   align-items: center;
 
-  border-radius: 10px;
-
   transition: background-color 0.5s;
 }
 
 nav div:hover {
   background-color: black;
-  color: white;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
 }
 
 main {
@@ -97,18 +92,21 @@ main {
   border-radius: 15px;
 }
 
-#hero {
-  scroll-snap-align: start;
+section {
+  height: 100%;
+  width: 100%;
 
+  scroll-snap-align: start;
   position: relative;
 
-  background-image: url('./src/assets/hero.jpg');
-  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
+}
+
+#hero {
+  background-image: url('./src/assets/hero.jpg');
+  background-position: center bottom;
 }
 
 .hero-text {
@@ -147,18 +145,8 @@ main {
 }
 
 #about-section {
-  scroll-snap-align: start;
-  
-  height: 100%;
-  width: 100%;
-
   background-image: url('./src/assets/italy.jpg');
   background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -171,18 +159,8 @@ main {
 }
 
 #projects-section {
-  scroll-snap-align: start;
-
-  height: 100%;
-  width: 100%;
-
   background-image: url('./src/assets/mammoth.jpg');
   background-position: 20% top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  position: relative;
 
   display: grid;
   grid-template-rows: 8vh minmax(min-content, 15%) minmax(70%, auto);
@@ -190,9 +168,6 @@ main {
 
 #project-list {
   grid-row-start: 3;
-  height: 100%;
-  width: 100%;
-  margin: auto;
 
   display: flex;
   justify-content: center;
@@ -207,18 +182,8 @@ main {
 }
 
 #resume-section {
-  height: 100%;
-  width: 100%;
-
-  scroll-snap-align: start;
-
   background-image: url('./src/assets/music-center.jpg');
   background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  position: relative;
 }
 
 #resume-section div {
