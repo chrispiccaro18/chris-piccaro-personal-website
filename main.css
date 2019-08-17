@@ -4,9 +4,6 @@
 }
 
 html {
-  visibility: visible;
-  opacity: 1;
-
   font-size: calc(14px + (21 - 14) * (100vw - 480px) / (1300 - 480));
 }
 
