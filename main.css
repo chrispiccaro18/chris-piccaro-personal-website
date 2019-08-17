@@ -43,7 +43,7 @@ nav {
 main {
   margin-top: 10vh;
   height: 100%;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 
@@ -89,8 +89,8 @@ main {
   height: 100%;
   width: 100%;
 
-  background-image: url('./src/assets/about.jpg');
-  background-position: center center;
+  background-image: url('./src/assets/mammoth.jpg');
+  background-position: 20% top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -120,8 +120,8 @@ main {
   height: 100%;
   width: 100%;
 
-  background-image: url('./src/assets/projects.jpg');
-  background-position: center center;
+  background-image: url('./src/assets/music-center.jpg');
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
