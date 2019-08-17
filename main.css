@@ -7,6 +7,8 @@ html {
   visibility: visible;
   opacity: 1;
 
+  scroll-behavior: smooth;
+
   font-size: calc(14px + (21 - 14) * (100vw - 480px) / (1300 - 480));
 }
 
@@ -15,17 +17,19 @@ body {
   color: white;
   background: black;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
+
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 header {
   font-family: Hack, monospace;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
 
-  background: white;
-  color: black;
+  background: rgb(0, 0, 0, 0.7);
 
   position: fixed;
   top: 0;
@@ -41,9 +45,11 @@ nav {
 }
 
 nav div {
-  border: 2px solid black;
-  height: 8vh;
+  border: 2px solid white;
+  height: 6vh;
   width: 6rem;
+
+  color: white;
 
   display: flex;
   justify-content: center;
@@ -51,7 +57,7 @@ nav div {
 
   border-radius: 10px;
 
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
 
 nav div:hover {
@@ -65,11 +71,7 @@ nav a {
 }
 
 main {
-  margin-top: 10vh;
   height: 100%;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 .text {
@@ -92,11 +94,13 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
 .hero-text {
+  position: absolute;
+  top: 8vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -116,8 +120,8 @@ main {
   height: 100%;
   width: 100%;
 
-  background-image: url('./src/assets/mammoth.jpg');
-  background-position: 20% top;
+  background-image: url('./src/assets/music-center.jpg');
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -133,7 +137,7 @@ main {
 .section-header {
   font-size: 4rem;
   position: absolute;
-  top: 0;
+  top: 8vh;
   align-self: flex-start;
 }
 
@@ -147,8 +151,8 @@ main {
   height: 100%;
   width: 100%;
 
-  background-image: url('./src/assets/music-center.jpg');
-  background-position: center top;
+  background-image: url('./src/assets/mammoth.jpg');
+  background-position: 20% top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
