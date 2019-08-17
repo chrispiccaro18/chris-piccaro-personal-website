@@ -32,54 +32,43 @@ main {
   background: rgb(0, 0, 0, 0.7);
 }
 
-#projects-section {
+#resume-section {
   height: 100%;
   width: 100%;
 
-  background-image: url('./src/assets/projects.jpg');
+  background-image: url('./src/assets/resume-bkg-img.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
   position: relative;
-
-  display: grid;
-  grid-template-rows: minmax(min-content, 15%) minmax(80%, auto);
 }
 
 .section-header {
-  grid-row-start: 1;
   font-size: 4rem;
   position: absolute;
   top: 0;
 }
 
-@media only screen and (orientation: landscape) {
-  section {
-    grid-template-rows: minmax(20%, auto) minmax(70%, auto);
-  }
-
-  .section-header {
-    background: none;
-  }
-}
-
-#project-list {
-  grid-row-start: 2;
-  height: 100%;
+#resume-section div {
   width: 100%;
-  margin: auto;
+  height: 100%;
 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
-.project-card {
-  height: 45%;
-  width: 30%;
-  background-color: blue;
-  border: 1px solid red;
+#resume-section a {
+  height: 80%;
+
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#resume-section img  {
+  max-width: 100%;
+  max-height: 100%;
 }
