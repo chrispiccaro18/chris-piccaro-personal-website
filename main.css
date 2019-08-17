@@ -114,13 +114,26 @@ main {
   font-size: 2rem;
 }
 
+#blink {
+  animation: blink 2.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+
 #about-section {
   scroll-snap-align: start;
   
   height: 100%;
   width: 100%;
 
-  background-image: url('./src/assets/music-center.jpg');
+  background-image: url('./src/assets/italy.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,7 +207,7 @@ main {
 
   scroll-snap-align: start;
 
-  background-image: url('./src/assets/resume-bkg-img.jpg');
+  background-image: url('./src/assets/music-center.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
