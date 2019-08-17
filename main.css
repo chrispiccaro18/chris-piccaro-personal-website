@@ -40,6 +40,25 @@ nav {
   align-items: center;
 }
 
+nav div {
+  border: 2px solid black;
+  height: 8vh;
+  width: 6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  transition: 0.5s;
+}
+
+nav div:hover {
+  background-color: black;
+  color: white;
+}
+
 nav a {
   text-decoration: none;
   color: black;
