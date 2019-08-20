@@ -155,8 +155,29 @@ section {
   align-items: center;
 }
 
-.section-text {
+#about .section-text {
   width: 70%;
+}
+
+#tech-stack {
+  display: flex;
+}
+
+.tech-stack-item {
+  margin: 1rem;
+  padding: 0.75rem;
+  background: rgb(0, 0, 0, 0.7);
+
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tech-stack-item img {
+  height: 2rem;
 }
 
 #projects {
@@ -167,11 +188,15 @@ section {
   grid-template-rows: 8vh minmax(min-content, 15%) minmax(70%, auto);
 }
 
+.arrow {
+  height: 5rem;
+}
+
 #project-list {
   grid-row-start: 3;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -180,6 +205,41 @@ section {
   width: 60%;
   background-color: rgb(0, 0, 0, 0.7);
   border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project-card h3 {
+  font-size: 2rem;
+  align-self: center;
+}
+
+.project-card img {
+  max-height: 50%;
+  max-width: 90%;
+
+  align-self: center;
+}
+
+.project-card div {
+  align-self: center;
+}
+
+.project-card a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+.project-card p {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #resume {
