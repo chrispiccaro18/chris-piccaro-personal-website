@@ -185,7 +185,7 @@ section {
   background-position: 20% top;
 
   display: grid;
-  grid-template-rows: 8vh minmax(min-content, 15%) minmax(70%, auto);
+  grid-template-rows: 8vh minmax(min-content, 20%) minmax(60%, auto);
 }
 
 .arrow {
