@@ -106,7 +106,7 @@ section {
 }
 
 #hero {
-  background-image: url('./src/assets/hero.jpg');
+  background-image: url('./src/assets/images/hero.jpg');
   background-position: center bottom;
 }
 
@@ -146,7 +146,7 @@ section {
 }
 
 #about {
-  background-image: url('./src/assets/italy.jpg');
+  background-image: url('./src/assets/images/italy.jpg');
   background-position: center top;
 
   display: flex;
@@ -181,7 +181,7 @@ section {
 }
 
 #projects {
-  background-image: url('./src/assets/mammoth.jpg');
+  background-image: url('./src/assets/images/mammoth.jpg');
   background-position: 20% top;
 
   display: grid;
@@ -243,7 +243,7 @@ section {
 }
 
 #resume {
-  background-image: url('./src/assets/music-center.jpg');
+  background-image: url('./src/assets/images/music-center.jpg');
   background-position: center top;
 }
 
