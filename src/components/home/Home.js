@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Home.scss';
 import Hero from './hero/Hero';
 
 export default function Home() {

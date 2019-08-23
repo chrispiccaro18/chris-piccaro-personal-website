@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './reset.css';
-import './main.css';
+import './reset.scss';
+import './main.scss';
 import App from './components/App';
 
 render(
