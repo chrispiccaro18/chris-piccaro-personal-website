@@ -1,9 +1,9 @@
 import React from 'react';
-import './Hero.scss';
+import styles from './Hero.scss';
 
 export default function Home() {
   return (
-    <section id="hero">
+    <section className={styles.Hero}>
       <div className="hero-text">
         <h1 className="text">chris piccaro</h1>
         <h2 className="text">full stack developer<span id="blink">_</span></h2>

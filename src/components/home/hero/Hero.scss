@@ -1,39 +1,40 @@
-#hero {
+:local(.Hero) {
   background-image: url('../../../assets/images/hero.jpg');
   background-position: center bottom;
-}
 
-.hero-text {
-  position: absolute;
-  top: 8vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.hero-text h1 {
-  font-size: 2.8rem;
-}
-
-.hero-text h2 {
-  font-size: 1.8rem;
-}
-
-#blink {
-  animation-name: blink;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
+  .hero-text {
+    position: absolute;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  80% {
-    opacity: 1;
+  
+  .hero-text h1 {
+    font-size: 2.8rem;
   }
-  100% {
-    opacity: 1;
+  
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+  
+  #blink {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
+
