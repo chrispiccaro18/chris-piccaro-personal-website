@@ -3,7 +3,7 @@ import styles from './Header.scss';
 
 export default function Header() {
   return (
-    <header style={styles}>
+    <header className={styles.Header}>
       <nav>
         <a href="#hero">
           <div className="nav-button">
