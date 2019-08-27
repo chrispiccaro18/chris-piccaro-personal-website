@@ -14,7 +14,7 @@ export default function Projects() {
           </li>
           <li className="project-card">
             <h3>mega nap</h3>
-            <img src="../assets/images/mega-nap.png" alt="project image" />
+            <img src="./src/assets/images/mega-nap.png" alt="project image" />
             <div>
               <a href="https://www.meganap.com" target="_blank" rel="noopener noreferrer">live site</a>
               <span> | </span>
