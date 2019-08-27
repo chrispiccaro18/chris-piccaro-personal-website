@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 export default function About() {
   return (
     <section className={styles.About}>
-      <Element name="about">
+      <Element name="about" id="about-scroll">
         <h2 className="section-header text">about</h2>
         <div className="section-text text">
           <p>

@@ -2,11 +2,16 @@
   background-image: url('../../../assets/images/italy.jpg');
   background-position: center top;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   
+  #about-scroll {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .section-text {
     width: 70%;
   }
