@@ -1,0 +1,38 @@
+main {
+  height: 100%;
+}
+
+.section-header {
+  font-size: 4rem;
+  position: absolute;
+  top: 8vh;
+  align-self: flex-start;
+}
+
+.text {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+
+  border-radius: 15px;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+
+  scroll-snap-align: start;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 992px) {
+  section {
+    background-attachment: initial !important;
+  }
+}

@@ -1,0 +1,39 @@
+:local(.About) {
+  background-image: url('../../../assets/images/italy.jpg');
+  background-position: center top;
+
+  
+  #about-scroll {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-text {
+    width: 70%;
+  }
+  
+  #tech-stack {
+    display: flex;
+  }
+  
+  .tech-stack-item {
+    margin: 1rem;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.7);
+  
+    border-radius: 15px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tech-stack-item img {
+    height: 2rem;
+  }
+}

@@ -1,0 +1,66 @@
+:local(.Projects) {
+  background-image: url('../../../assets/images/mammoth.jpg');
+  background-position: 20% top;
+
+  
+  #projects-scroll {
+    height: 100%;
+    
+    display: grid;
+    grid-template-rows: 8vh minmax(min-content, 20%) minmax(60%, auto);
+  }
+  
+  .arrow {
+    height: 5rem;
+  }
+  
+  #project-list {
+    grid-row-start: 3;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .project-card {
+    height: 80%;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .project-card h3 {
+    font-size: 2rem;
+    align-self: center;
+  }
+  
+  .project-card img {
+    max-height: 50%;
+    max-width: 90%;
+  
+    align-self: center;
+  }
+  
+  .project-card div {
+    align-self: center;
+  }
+  
+  .project-card a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .project-card p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
