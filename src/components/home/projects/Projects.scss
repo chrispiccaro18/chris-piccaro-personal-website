@@ -2,8 +2,13 @@
   background-image: url('../../../assets/images/mammoth.jpg');
   background-position: 20% top;
 
-  display: grid;
-  grid-template-rows: 8vh minmax(min-content, 20%) minmax(60%, auto);
+  
+  #projects-scroll {
+    height: 100%;
+    
+    display: grid;
+    grid-template-rows: 8vh minmax(min-content, 20%) minmax(60%, auto);
+  }
   
   .arrow {
     height: 5rem;
